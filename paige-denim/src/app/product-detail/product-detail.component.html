@@ -1,1 +1,77 @@
 <h1>Product Details</h1>
+
+<pre>{{ details | json }}</pre>
+
+<form #form="ngForm" class="details-form" (submit)="updateDetails(details)">
+  <mat-form-field class="details-full-width">
+    <mat-label>Name</mat-label>
+    <input
+      matInput
+      placeholder="Product name..."
+      [(ngModel)]="details.name"
+      name="name"
+      type="text"
+      required
+    />
+  </mat-form-field>
+
+  <mat-form-field class="details-full-width">
+    <mat-label>Color</mat-label>
+    <input
+      matInput
+      placeholder="Product color..."
+      [(ngModel)]="details.color"
+      name="color"
+      type="text"
+      maxlength="56"
+      required
+    />
+  </mat-form-field>
+
+  <mat-form-field class="details-full-width">
+    <mat-label>Type</mat-label>
+    <input
+      matInput
+      placeholder="Product type..."
+      [(ngModel)]="details.type"
+      name="type"
+      type="text"
+      maxlength="56"
+      required
+    />
+  </mat-form-field>
+
+  <mat-form-field class="details-full-width">
+    <mat-label>Color</mat-label>
+    <textarea
+      matInput
+      placeholder="Product description..."
+      [(ngModel)]="details.description"
+      name="description"
+      type="text"
+      maxlength="56"
+      required
+    ></textarea>
+  </mat-form-field>
+
+  <mat-form-field class="details-full-width">
+    <mat-label>Price</mat-label>
+    <input
+      matInput
+      placeholder="Product price..."
+      [(ngModel)]="details.price"
+      name="price"
+      type="text"
+      min="0"
+      required
+    />
+  </mat-form-field>
+  <button
+    type="submit"
+    [disabled]="form.invalid"
+    mat-raised-button
+    color="primary"
+  >
+    Update
+  </button>
+</form>
