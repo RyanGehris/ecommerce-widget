@@ -15,8 +15,19 @@ export class ProductDetailComponent {
     color: 'black',
     price: 80.0,
   };
+  currentDetails = { ...this.details };
 
-  updateDetails(details: {}) {
-    console.log(details);
+  updateDetails(updatedDetails: Product) {
+    this.details = updatedDetails;
   }
+}
+
+export interface Product {
+  id: string;
+  sku: string;
+  name: string;
+  type: string;
+  description: string;
+  color: string;
+  price: number;
 }

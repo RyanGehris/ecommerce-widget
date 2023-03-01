@@ -2,13 +2,17 @@
 
 <pre>{{ details | json }}</pre>
 
-<form #form="ngForm" class="details-form" (submit)="updateDetails(details)">
+<form
+  #form="ngForm"
+  class="details-form"
+  (submit)="updateDetails(currentDetails)"
+>
   <mat-form-field class="details-full-width">
     <mat-label>Name</mat-label>
     <input
       matInput
       placeholder="Product name..."
-      [(ngModel)]="details.name"
+      [(ngModel)]="currentDetails.name"
       name="name"
       type="text"
       required
@@ -20,7 +24,7 @@
     <input
       matInput
       placeholder="Product color..."
-      [(ngModel)]="details.color"
+      [(ngModel)]="currentDetails.color"
       name="color"
       type="text"
       maxlength="56"
@@ -33,7 +37,7 @@
     <input
       matInput
       placeholder="Product type..."
-      [(ngModel)]="details.type"
+      [(ngModel)]="currentDetails.type"
       name="type"
       type="text"
       maxlength="56"
@@ -46,7 +50,7 @@
     <textarea
       matInput
       placeholder="Product description..."
-      [(ngModel)]="details.description"
+      [(ngModel)]="currentDetails.description"
       name="description"
       type="text"
       maxlength="56"
@@ -59,7 +63,7 @@
     <input
       matInput
       placeholder="Product price..."
-      [(ngModel)]="details.price"
+      [(ngModel)]="currentDetails.price"
       name="price"
       type="text"
       min="0"
@@ -71,6 +75,7 @@
     [disabled]="form.invalid"
     mat-raised-button
     color="primary"
+    [routerLink]="'/product-list'"
   >
     Update
   </button>
