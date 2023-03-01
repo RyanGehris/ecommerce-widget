@@ -46,9 +46,11 @@ export class ProductListComponent {
     console.log('Edit sku ', sku);
   }
 
-  deleteProduct(sku: string) {
-    console.log('Delete ', sku);
-    this.productsService.delete(sku).subscribe();
+  deleteProduct(id: string, name: string) {
+    this.productsService.delete(id).subscribe(() => {
+      this.fetchProductList();
+      alert(`Deleted ${name}`);
+    });
   }
 }
 

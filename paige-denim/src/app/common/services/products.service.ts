@@ -15,15 +15,15 @@ export class ProductsService {
     return this.http.get(this.getUrl());
   }
 
-  delete(sku: string) {
-    return this.http.delete(this.getUrlWithSku(sku));
+  delete(id: string) {
+    return this.http.delete(this.getUrlWithSku(id));
   }
 
   private getUrl() {
     return `${BASE_URL}/${this.model}`;
   }
 
-  private getUrlWithSku(sku: string) {
-    return `${this.getUrl()}/${sku}`;
+  private getUrlWithSku(id: string) {
+    return `${this.getUrl()}/${id}`;
   }
 }

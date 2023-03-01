@@ -1,42 +1,6 @@
 {
   "products": [
     {
-      "id": "123897917321239",
-      "sku": "nkl-2314",
-      "name": "Lennox - Black Shadow",
-      "type": "pant",
-      "description": "Lennox is our signature slim fit, fitted through the thigh.",
-      "color": "black",
-      "price": 80
-    },
-    {
-      "id": "123897917321240",
-      "sku": "njks-3893",
-      "name": "High Rise Laurel Canyon",
-      "type": "pant",
-      "description": "The High Rise Laurel Canyon is a vintage PAIGE style that has made a big comeback.",
-      "color": "white",
-      "price": 225
-    },
-    {
-      "id": "123897917321241",
-      "sku": "nsks-3728",
-      "name": "The Nines - Collection Genevieve",
-      "type": "pant",
-      "description": "The Nines is our everyday elevated collection that allows you to feel confident, empowered and dressed to the nines, no matter what",
-      "color": "white",
-      "price": 269
-    },
-    {
-      "id": "123897917321242",
-      "sku": "dkwl-8394",
-      "name": "Anessa Short - Vintage Moss Taupe",
-      "type": "short",
-      "description": "Anessa is the chic, polished short that will complete your warm weather wardrobe.",
-      "color": "brown",
-      "price": 179
-    },
-    {
       "id": "123897917321243",
       "sku": "djsl-9382",
       "name": "Dani Short - Lived in Crisp White",
