@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { ProductsService } from '../common/services/products.service';
 
 @Component({
   selector: 'app-product-list',
@@ -8,8 +9,11 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./product-list.component.scss'],
 })
 export class ProductListComponent {
+  productList = [];
   displayedColumns: string[] = ['name', 'color', 'type', 'price', 'actions'];
-  dataSource = new MatTableDataSource<Product>(productList);
+  dataSource = new MatTableDataSource<Product>(this.productList);
+
+  constructor(private productsService: ProductsService) {}
 
   @ViewChild(MatPaginator) paginator: any = MatPaginator;
 
@@ -27,9 +31,10 @@ export class ProductListComponent {
   }
 
   fetchProductList() {
-    this.coursesService
-      .all()
-      .subscribe((result: any) => (this.courses = result));
+    this.productsService.all().subscribe((result: any) => {
+      console.log('Result', result);
+      this.productList = result;
+    });
   }
 
   edit(sku: string) {

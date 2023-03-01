@@ -8,6 +8,7 @@ import { MaterialModule } from './material/material.module';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, ProductListComponent, ProductDetailComponent],
@@ -15,10 +16,11 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     FormsModule,
     MaterialModule,
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
