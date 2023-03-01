@@ -7,7 +7,7 @@
       "type": "pant",
       "description": "Lennox is our signature slim fit, fitted through the thigh.",
       "color": "black",
-      "price": 80.0
+      "price": 80
     },
     {
       "id": "123897917321240",
@@ -16,7 +16,7 @@
       "type": "pant",
       "description": "The High Rise Laurel Canyon is a vintage PAIGE style that has made a big comeback.",
       "color": "white",
-      "price": 225.0
+      "price": 225
     },
     {
       "id": "123897917321241",
@@ -25,7 +25,7 @@
       "type": "pant",
       "description": "The Nines is our everyday elevated collection that allows you to feel confident, empowered and dressed to the nines, no matter what",
       "color": "white",
-      "price": 269.0
+      "price": 269
     },
     {
       "id": "123897917321242",
@@ -34,7 +34,7 @@
       "type": "short",
       "description": "Anessa is the chic, polished short that will complete your warm weather wardrobe.",
       "color": "brown",
-      "price": 179.0
+      "price": 179
     },
     {
       "id": "123897917321243",
@@ -43,7 +43,7 @@
       "type": "short",
       "description": "Modern meets vintage with the Dani high-waisted short. This effortlessly cool style is designed with an ultra high-rise and slightly A-line silhouette.",
       "color": "white",
-      "price": 169.0
+      "price": 169
     },
     {
       "id": "123897917321244",
@@ -52,7 +52,7 @@
       "type": "dress",
       "description": "An easy, everyday dress for those moments when you want to look a little more polished.",
       "color": "black",
-      "price": 229.0
+      "price": 229
     },
     {
       "id": "123897917321245",
@@ -61,7 +61,7 @@
       "type": "dress",
       "description": "An easy, everyday dress for those moments when you want to look a little more polished.",
       "color": "green",
-      "price": 229.0
+      "price": 229
     },
     {
       "id": "123897917321246",
@@ -70,7 +70,7 @@
       "type": "pant",
       "description": "Trouser-dressing continues to trend and we love this easy-going, yet elevated version.",
       "color": "green",
-      "price": 209.0
+      "price": 209
     },
     {
       "id": "123897917321247",
@@ -79,7 +79,7 @@
       "type": "pant",
       "description": "Your new everyday jean. Crafted in PAIGE Vintage denim with a mid-rise waist, this straight leg pair creates a streamlined look in the perfect medium blue wash with natural distressing",
       "color": "blue",
-      "price": 219.0
+      "price": 219
     },
     {
       "id": "123897917321247",
@@ -88,7 +88,7 @@
       "type": "short",
       "description": "This adorable, blush hued short is designed with a mid-rise, slightly relaxed silhouette and is finished with utility patch pockets and a casual frayed hem.",
       "color": "pink",
-      "price": 169.0
+      "price": 169
     },
     {
       "id": "123897917321248",
@@ -97,7 +97,7 @@
       "type": "pant",
       "description": "Always elevated and perfect for everyday wear, this high-rise ankle-length skinny comes in one of our bestselling dark washes of all time.",
       "color": "blue",
-      "price": 189.0
+      "price": 189
     },
     {
       "id": "123897917321249",
@@ -106,7 +106,7 @@
       "type": "dress",
       "description": "The Rosalee Dress is our founder's favorite dress of the season thanks to all of it's feminine design details.",
       "color": "white",
-      "price": 209.0
+      "price": 209
     },
     {
       "id": "123897917321250",
@@ -142,7 +142,7 @@
       "type": "shirt",
       "description": "Made with supremely soft cotton slub jersey in classic navy, this crew neck tee features a single chest pocket and a longer torso with a curved hem.",
       "color": "blue",
-      "price": 79.0
+      "price": 79
     },
     {
       "id": "123897917321254",
@@ -151,7 +151,7 @@
       "type": "shirt",
       "description": "Made from lightweight and breathable rayon yarns, the Landon Shirt is your new favorite shirt in an elevated, blue geometric print.",
       "color": "blue",
-      "price": 149.0
+      "price": 149
     },
     {
       "id": "123897917321255",
@@ -160,7 +160,7 @@
       "type": "eyewear",
       "description": "We're proud to introduce our first-ever, sustainable eyewear collection for men and women.",
       "color": "brown",
-      "price": 250.0
+      "price": 250
     },
     {
       "id": "123897917321256",
@@ -169,7 +169,7 @@
       "type": "pant",
       "description": "Our tried-and-true straight fit comes in an easy light blue wash that feels fresh for the season.",
       "color": "blue",
-      "price": 199.0
+      "price": 199
     },
     {
       "id": "123897917321257",
@@ -178,7 +178,7 @@
       "type": "pant",
       "description": "Our tried-and-true straight fit comes in an easy light blue wash that feels fresh for the season.",
       "color": "blue",
-      "price": 199.0
+      "price": 199
     },
     {
       "id": "123897917321258",
@@ -187,7 +187,7 @@
       "type": "shirt",
       "description": "This is the perfect everyday white tee that will last for years.",
       "color": "white",
-      "price": 69.0
+      "price": 69
     }
   ]
 }
