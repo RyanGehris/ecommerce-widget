@@ -17,12 +17,12 @@ export class ProductListComponent {
 
   @ViewChild(MatPaginator) paginator: any = MatPaginator;
 
+  // ngAfterViewInit() {
+  //   this.dataSource.paginator = this.paginator;
+  // }
+
   ngOnInit(): void {
     this.fetchProductList();
-  }
-
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
   }
 
   applyFilter(event: Event) {
@@ -32,9 +32,14 @@ export class ProductListComponent {
 
   fetchProductList() {
     this.productsService.all().subscribe((result: any) => {
-      console.log('Result', result);
       this.productList = result;
+      this.updateDataSource();
     });
+  }
+
+  updateDataSource() {
+    this.dataSource = new MatTableDataSource<Product>(this.productList);
+    this.dataSource.paginator = this.paginator;
   }
 
   edit(sku: string) {
