@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ProductsService } from '../common/services/products.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -10,18 +11,17 @@ export class ProductDetailComponent {
   currentSku: string | null = null;
   productList = [];
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private productsService: ProductsService
+  ) {}
 
   ngOnInit() {
-    this.route.paramMap.subscribe((params) => {
-      this.currentSku = params.get('sku');
-      if (this.currentSku) {
-        this.setCurrentProductDetail(this.currentSku);
-      }
-    });
+    this.fetchProductList();
   }
 
-  productDetail: Product | undefined = {
+  productDetail: Product = {
     id: '',
     sku: '',
     name: '',
@@ -32,10 +32,27 @@ export class ProductDetailComponent {
   };
   currentProductDetail = { ...this.productDetail };
 
+  fetchProductList() {
+    this.productsService.all().subscribe((result: any) => {
+      this.productList = result;
+      this.getParam();
+    });
+  }
+
+  getParam() {
+    this.route.paramMap.subscribe((params) => {
+      this.currentSku = params.get('sku');
+      if (this.currentSku) {
+        this.setCurrentProductDetail(this.currentSku);
+      }
+    });
+  }
+
   setCurrentProductDetail(sku: string) {
-    this.productDetail = this.productList.find(
-      (product: Product) => product.sku === sku
-    );
+    this.productDetail =
+      this.productList.find((product: Product) => product.sku === sku) ||
+      this.productDetail;
+    this.currentProductDetail = { ...this.productDetail };
   }
 
   updateDetails(updatedDetails: any) {}
