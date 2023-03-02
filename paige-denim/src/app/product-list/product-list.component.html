@@ -38,7 +38,7 @@
         <button
           aria-label="Edit icon"
           color="accent"
-          [routerLink]="'/product-detail'"
+          [routerLink]="['/product-detail', element.sku]"
           mat-button
         >
           <mat-icon aria-hidden="false" fontIcon="edit"></mat-icon>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-detail',
@@ -6,20 +7,38 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-detail.component.scss'],
 })
 export class ProductDetailComponent {
-  details = {
-    id: '123897917321239',
-    sku: 'nkl-2314',
-    name: 'Lennox - Black Shadow',
-    type: 'pant',
-    description: 'Lennox is our signature slim fit, fitted through the thigh.',
-    color: 'black',
-    price: 80.0,
-  };
-  currentDetails = { ...this.details };
+  currentSku: string | null = null;
+  productList = [];
 
-  updateDetails(updatedDetails: Product) {
-    this.details = updatedDetails;
+  constructor(private route: ActivatedRoute, private router: Router) {}
+
+  ngOnInit() {
+    this.route.paramMap.subscribe((params) => {
+      this.currentSku = params.get('sku');
+      if (this.currentSku) {
+        this.setCurrentProductDetail(this.currentSku);
+      }
+    });
   }
+
+  productDetail: Product | undefined = {
+    id: '',
+    sku: '',
+    name: '',
+    type: '',
+    description: '',
+    color: '',
+    price: 0,
+  };
+  currentProductDetail = { ...this.productDetail };
+
+  setCurrentProductDetail(sku: string) {
+    this.productDetail = this.productList.find(
+      (product: Product) => product.sku === sku
+    );
+  }
+
+  updateDetails(updatedDetails: any) {}
 }
 
 export interface Product {
