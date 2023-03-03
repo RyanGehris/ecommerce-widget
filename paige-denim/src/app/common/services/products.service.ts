@@ -16,14 +16,26 @@ export class ProductsService {
   }
 
   delete(id: string) {
-    return this.http.delete(this.getUrlWithSku(id));
+    return this.http.delete(this.getUrlWithID(id));
+  }
+
+  update(productDetails: {
+    id: string;
+    sku: string;
+    name: string;
+    type: string;
+    description: string;
+    color: string;
+    price: number;
+  }) {
+    return this.http.put(this.getUrlWithID(productDetails.id), productDetails);
   }
 
   private getUrl() {
     return `${BASE_URL}/${this.model}`;
   }
 
-  private getUrlWithSku(id: string) {
+  private getUrlWithID(id: string) {
     return `${this.getUrl()}/${id}`;
   }
 }
