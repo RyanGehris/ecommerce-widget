@@ -31,9 +31,14 @@ export class ProductListComponent {
   }
 
   fetchProductList() {
-    this.productsService.all().subscribe((result: any) => {
-      this.productList = result;
-      this.updateDataSource();
+    this.productsService.all().subscribe({
+      next: (result: any) => {
+        this.productList = result;
+        this.updateDataSource();
+      },
+      error: (error) => {
+        alert(error.message);
+      },
     });
   }
 
@@ -43,9 +48,14 @@ export class ProductListComponent {
   }
 
   deleteProduct(id: string, name: string) {
-    this.productsService.delete(id).subscribe(() => {
-      this.fetchProductList();
-      alert(`Deleted ${name}`);
+    this.productsService.delete(id).subscribe({
+      next: () => {
+        this.fetchProductList();
+        alert(`Deleted ${name}`);
+      },
+      error: (error) => {
+        alert(error.message);
+      },
     });
   }
 }
