@@ -1,13 +1,49 @@
 {
   "products": [
     {
+      "id": "123897917321240",
+      "sku": "njks-3893",
+      "name": "High Rise Laurel Canyon",
+      "type": "pant",
+      "description": "The High Rise La",
+      "color": "w",
+      "price": 225
+    },
+    {
+      "id": "123897917321241",
+      "sku": "nsks-3728",
+      "name": "The Nines - Collection Genevieve",
+      "type": "pant",
+      "description": "The Nines is our everyday elevated collection that allows you to feel confident, empowered and dressed to the nines, no matter what",
+      "color": "white",
+      "price": 269
+    },
+    {
+      "id": "123897917321242",
+      "sku": "dkwl-8394",
+      "name": "Anessa Short - Vintage Moss Taupe",
+      "type": "short",
+      "description": "Anessa is the chic, polished short that will complete your warm weather wardrobe.",
+      "color": "brown",
+      "price": 179
+    },
+    {
+      "id": "123897917321243",
+      "sku": "djsl-9382",
+      "name": "Dani Short - Lived in Crisp White",
+      "type": "short",
+      "description": "Modern meets vintage with the Dani high-waisted short. This effortlessly cool style is designed with an ultra high-rise and slightly A-line silhouette.",
+      "color": "white",
+      "price": 169
+    },
+    {
       "id": "123897917321244",
       "sku": "dksl-0293",
       "name": "Mayslie Dress - Black",
       "type": "dress",
-      "description": "An easy does it.",
+      "description": "An easy, everyday dress for those moments when you want to look a little more polished.",
       "color": "black",
-      "price": 0.5
+      "price": 229
     },
     {
       "id": "123897917321245",
@@ -19,11 +55,20 @@
       "price": 229
     },
     {
+      "id": "123897917321246",
+      "sku": "jdwk-8377",
+      "name": "Romy - Vintage Ivy Green",
+      "type": "pant",
+      "description": "Trouser-dressing continues to trend and we love this easy-going, yet elevated version.",
+      "color": "green",
+      "price": 209
+    },
+    {
       "id": "123897917321247",
       "sku": "jjdk-3663",
       "name": "Amber - Seawater Distressed",
       "type": "pant",
-      "description": "Youstreamlined lo",
+      "description": "Your new everyday jean. Crafted in PAIGE Vintage denim with a mid-rise waist, this straight leg pair creates a streamlined look in the perfect medium blue wash with natural distressing",
       "color": "blue",
       "price": 219
     },
@@ -77,7 +122,7 @@
       "sku": "ueii-3009",
       "name": "Delia Sandal - Black Leather",
       "type": "shoe",
-      "description": "Flat sandals er.",
+      "description": "Flat sandals are an off-duty staple and our new Delia sandal is the feminine pair you’ll be living in this spring and summer.",
       "color": "black",
       "price": 159.9
     },
