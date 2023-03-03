@@ -11,9 +11,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSelectModule } from '@angular/material/select';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from '../app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const MaterialComponents = [
   AppRoutingModule,
+  BrowserAnimationsModule,
   MatButtonModule,
   MatFormFieldModule,
   MatInputModule,

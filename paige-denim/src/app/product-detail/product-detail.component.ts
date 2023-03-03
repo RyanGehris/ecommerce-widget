@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductsService } from '../common/services/products.service';
 import { Product } from '../common/models/product';
@@ -57,7 +57,6 @@ export class ProductDetailComponent {
   }
 
   updateDetails(updatedDetails: any) {
-    console.log('update', updatedDetails);
     this.productsService.update(updatedDetails).subscribe({
       next: () => {
         alert('Successfully updated');
