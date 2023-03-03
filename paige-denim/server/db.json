@@ -5,7 +5,7 @@
       "sku": "dksl-0293",
       "name": "Mayslie Dress - Black",
       "type": "dress",
-      "description": "An eas",
+      "description": "An easy does it.",
       "color": "black",
       "price": 229
     },
@@ -19,20 +19,11 @@
       "price": 229
     },
     {
-      "id": "123897917321246",
-      "sku": "jdwk-8377",
-      "name": "Romy - Vintage Ivy Green",
-      "type": "pant",
-      "description": "Trouser-dressing continues to trend and we love this easy-going, yet elevated version.",
-      "color": "green",
-      "price": 209
-    },
-    {
       "id": "123897917321247",
       "sku": "jjdk-3663",
       "name": "Amber - Seawater Distressed",
       "type": "pant",
-      "description": "Your new everyday jean. Crafted in PAIGE Vintage denim with a mid-rise waist, this straight leg pair creates a streamlined look in the perfect medium blue wash with natural distressing",
+      "description": "Youstreamlined lo",
       "color": "blue",
       "price": 219
     },
