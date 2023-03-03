@@ -16,7 +16,7 @@ import { ProductsService } from '../common/services/products.service';
 })
 export class ProductListComponent {
   productList = [];
-  displayedColumns: string[] = ['name', 'color', 'type', 'price', 'actions'];
+  displayedColumns: string[] = ['name', 'color', 'type', 'cost', 'actions'];
   dataSource = new MatTableDataSource<Product>(this.productList);
 
   constructor(private productsService: ProductsService) {}
