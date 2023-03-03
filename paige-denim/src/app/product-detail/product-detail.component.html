@@ -57,6 +57,10 @@
         type="text"
         maxlength="56"
         required
+        cdkTextareaAutosize
+        #autosize="cdkTextareaAutosize"
+        cdkAutosizeMinRows="1"
+        cdkAutosizeMaxRows="5"
       ></textarea>
       <mat-hint align="end"
         >{{ currentProductDetail.description.length }}/56</mat-hint
