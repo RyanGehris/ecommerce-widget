@@ -3,7 +3,7 @@
 <form
   #form="ngForm"
   class="details-form"
-  (submit)="updateDetails(currentProductDetail)"
+  (ngSubmit)="updateDetails(currentProductDetail)"
 >
   <mat-form-field class="details-full-width">
     <mat-label>Name</mat-label>
@@ -73,7 +73,6 @@
     [disabled]="form.invalid"
     mat-raised-button
     color="primary"
-    [routerLink]="'/product-list'"
   >
     Update
   </button>

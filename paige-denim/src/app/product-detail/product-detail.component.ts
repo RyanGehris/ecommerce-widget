@@ -55,7 +55,11 @@ export class ProductDetailComponent {
     this.currentProductDetail = { ...this.productDetail };
   }
 
-  updateDetails(updatedDetails: any) {}
+  updateDetails(updatedDetails: any) {
+    console.log('update', updatedDetails);
+    this.productsService.update(updatedDetails);
+    this.router.navigate(['/product-list']);
+  }
 }
 
 export interface Product {
