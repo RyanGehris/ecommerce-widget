@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductsService } from '../common/services/products.service';
+import { Product } from '../common/models/product';
 
 @Component({
   selector: 'app-product-detail',
@@ -68,14 +69,4 @@ export class ProductDetailComponent {
       },
     });
   }
-}
-
-export interface Product {
-  id: string;
-  sku: string;
-  name: string;
-  type: string;
-  description: string;
-  color: string;
-  price: number;
 }

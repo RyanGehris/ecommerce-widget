@@ -62,7 +62,11 @@
         cdkAutosizeMinRows="1"
         cdkAutosizeMaxRows="5"
       ></textarea>
-      <mat-hint align="end"
+      <mat-hint
+        align="end"
+        [ngClass]="
+          currentProductDetail.description.length > 56 ? 'warn-text' : ''
+        "
         >{{ currentProductDetail.description.length }}/56</mat-hint
       >
     </mat-form-field>

@@ -8,6 +8,7 @@ import {
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { ProductsService } from '../common/services/products.service';
+import { Product } from '../common/models/product';
 
 @Component({
   selector: 'app-product-list',
@@ -51,24 +52,10 @@ export class ProductListComponent {
     this.dataSource.paginator = this.paginator;
   }
 
-  edit(sku: string) {
-    console.log('Edit sku ', sku);
-  }
-
   deleteProduct(id: string, name: string) {
     this.productsService.delete(id).subscribe(() => {
       this.fetchProductList();
       alert(`Deleted ${name}`);
     });
   }
-}
-
-export interface Product {
-  id: number;
-  sku: string;
-  name: string;
-  type: string;
-  description: string;
-  color: string;
-  price: number;
 }
