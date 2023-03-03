@@ -10,15 +10,6 @@
       "price": 225
     },
     {
-      "id": "123897917321241",
-      "sku": "nsks-3728",
-      "name": "The Nines - Collection Genevieve",
-      "type": "pant",
-      "description": "The Nines is our everyday elevated collection that allows you to feel confident, empowered and dressed to the nines, no matter what",
-      "color": "white",
-      "price": 269
-    },
-    {
       "id": "123897917321242",
       "sku": "dkwl-8394",
       "name": "Anessa Short - Vintage Moss Taupe",
@@ -50,9 +41,9 @@
       "sku": "kdsj-3782",
       "name": "Mayslie Dress - Cactus",
       "type": "dress",
-      "description": "An easy, everyday dress for those moments when you want to look a little more polished.",
+      "description": "An easy, everyday dress fo",
       "color": "green",
-      "price": 229
+      "price": 0
     },
     {
       "id": "123897917321246",
