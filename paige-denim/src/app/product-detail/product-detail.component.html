@@ -17,7 +17,7 @@
       />
     </mat-form-field>
 
-    <mat-form-field class="details-full-width">
+    <mat-form-field hintLabel="Max 56 characters" class="details-full-width">
       <mat-label>Color</mat-label>
       <input
         matInput
@@ -28,13 +28,12 @@
         maxlength="56"
         required
       />
-      <mat-hint align="start">Max 56 characters</mat-hint>
       <mat-hint align="end"
         >{{ currentProductDetail.color.length }}/56</mat-hint
       >
     </mat-form-field>
 
-    <mat-form-field class="details-full-width">
+    <mat-form-field hintLabel="Max 56 characters" class="details-full-width">
       <mat-label>Type</mat-label>
       <input
         matInput
@@ -45,11 +44,10 @@
         maxlength="56"
         required
       />
-      <mat-hint align="start">Max 56 characters</mat-hint>
       <mat-hint align="end">{{ currentProductDetail.type.length }}/56</mat-hint>
     </mat-form-field>
 
-    <mat-form-field class="details-full-width">
+    <mat-form-field hintLabel="Max 56 characters" class="details-full-width">
       <mat-label>Description</mat-label>
       <textarea
         matInput
@@ -60,13 +58,15 @@
         maxlength="56"
         required
       ></textarea>
-      <mat-hint align="start">Max 56 characters</mat-hint>
       <mat-hint align="end"
         >{{ currentProductDetail.description.length }}/56</mat-hint
       >
     </mat-form-field>
 
-    <mat-form-field class="details-full-width">
+    <mat-form-field
+      hintLabel="Cannot be less than $0"
+      class="details-full-width"
+    >
       <mat-label>Price</mat-label>
       <input
         matInput
@@ -78,7 +78,7 @@
         required
       />
       <span matTextPrefix>$&nbsp;</span>
-      <mat-hint align="start">Must be $0 or greater</mat-hint>
+      <mat-hint align="start"></mat-hint>
     </mat-form-field>
     <button
       type="submit"
