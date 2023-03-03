@@ -33,6 +33,9 @@ export class ProductListComponent {
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filterPredicate = (data: Product, filter: string) => {
+      return data.color.toLowerCase().includes(filter.toLowerCase());
+    };
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
