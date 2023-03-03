@@ -57,8 +57,16 @@ export class ProductDetailComponent {
 
   updateDetails(updatedDetails: any) {
     console.log('update', updatedDetails);
-    this.productsService.update(updatedDetails);
-    this.router.navigate(['/product-list']);
+    this.productsService.update(updatedDetails).subscribe({
+      next: () => {
+        alert('Successfully updated');
+        this.router.navigate(['/product-list']);
+      },
+      error: (error) => {
+        alert(error.message);
+        this.router.navigate(['/product-list']);
+      },
+    });
   }
 }
 
