@@ -1,15 +1,6 @@
 {
   "products": [
     {
-      "id": "123897917321243",
-      "sku": "djsl-9382",
-      "name": "Dani Short - Lived in Crisp White",
-      "type": "short",
-      "description": "Modern meets vintage with the Dani high-waisted short. This effortlessly cool style is designed with an ultra high-rise and slightly A-line silhouette.",
-      "color": "white",
-      "price": 169
-    },
-    {
       "id": "123897917321244",
       "sku": "dksl-0293",
       "name": "Mayslie Dress - Black",
