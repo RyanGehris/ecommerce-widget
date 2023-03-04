@@ -1,5 +1,7 @@
 # Ecommerce-widget for Paige Denim
 
+This is an ecommerce-widget created to read, update, and delete products. I created this using Typescript and Angular. For the frontend, I used HTML along with Angular material to design and style the application. On the backend, I used a simple json file that I sent get, delete, and put requests to using HttpClient. I strived to create a simple and highly useable product. Enjoy!
+
 ## Product List Page
 ### /product-list
 ![Screenshot 2023-03-03 at 4 00 58 PM](https://user-images.githubusercontent.com/105510284/222860526-a6129fb2-3c7e-4dcf-8278-0eb044dfc7e4.png)
