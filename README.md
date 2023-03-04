@@ -10,6 +10,12 @@
 
 ## Video Demos
 <details>
+<summary>Edit Product Details</summary>
+  
+![edit-paige](https://user-images.githubusercontent.com/105510284/222860943-09f1493f-27ea-4046-8099-c3e4ad9c695f.gif)
+  
+</details>
+<details>
 <summary>Delete Product</summary>
 
 ![delete-paige-trim](https://user-images.githubusercontent.com/105510284/222860946-89471629-dac5-4585-b227-8c15a75a6958.gif)
@@ -20,12 +26,6 @@
   
 ![filter-paige-trim](https://user-images.githubusercontent.com/105510284/222860940-98c90e63-2cf8-484d-ab59-b27ced2551ff.gif)
 
-</details>
-<details>
-<summary>Edit Product Details</summary>
-  
-![edit-paige](https://user-images.githubusercontent.com/105510284/222860943-09f1493f-27ea-4046-8099-c3e4ad9c695f.gif)
-  
 </details>
 <details>
 <summary>List Pagination</summary>
