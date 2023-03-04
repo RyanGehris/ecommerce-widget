@@ -1,11 +1,11 @@
 # Ecommerce-widget for Paige Denim
 
 ## Product List Page
-####/product-list
+###/product-list
 ![Screenshot 2023-03-03 at 4 00 58 PM](https://user-images.githubusercontent.com/105510284/222860526-a6129fb2-3c7e-4dcf-8278-0eb044dfc7e4.png)
 
 ## Product Detail Page
-####/product-detail/{sku}
+###/product-detail/{sku}
 ![Screenshot 2023-03-03 at 4 01 16 PM](https://user-images.githubusercontent.com/105510284/222860529-b151baf4-ca49-402d-baf7-5b5eca7a86e8.png)
 
 ## Video Demos
@@ -23,11 +23,13 @@
 </details>
 <details>
 <summary>Edit Product Details</summary>
+  
 ![edit-paige](https://user-images.githubusercontent.com/105510284/222860943-09f1493f-27ea-4046-8099-c3e4ad9c695f.gif)
   
 </details>
 <details>
 <summary>List Pagination</summary>
+  
 ![pagination-paige](https://user-images.githubusercontent.com/105510284/222860931-2aa1fd9b-36e1-4df7-8c82-dc3c7408733e.gif)
 
 </details>
