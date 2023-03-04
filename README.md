@@ -47,7 +47,7 @@ The `npm start` calls the `serve:all` command which is a convenience method that
 
 ```
 "start": "npm run serve:all",
-"serve:web": "ng serve --port 4300 --open",
+"serve:web": "ng serve --port 4200 --open",
 "serve:api": "json-server server/db.json",
 "serve:all": "concurrently \"npm run serve:api\" \"npm run serve:web\"",
 ```
