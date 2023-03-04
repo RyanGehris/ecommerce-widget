@@ -1,11 +1,11 @@
 # Ecommerce-widget for Paige Denim
 
 ## Product List Page
-###/product-list
+### /product-list
 ![Screenshot 2023-03-03 at 4 00 58 PM](https://user-images.githubusercontent.com/105510284/222860526-a6129fb2-3c7e-4dcf-8278-0eb044dfc7e4.png)
 
 ## Product Detail Page
-###/product-detail/{sku}
+### /product-detail/{sku}
 ![Screenshot 2023-03-03 at 4 01 16 PM](https://user-images.githubusercontent.com/105510284/222860529-b151baf4-ca49-402d-baf7-5b5eca7a86e8.png)
 
 ## Video Demos
@@ -34,12 +34,12 @@
 
 </details>
 
-## Web: Getting Started
+## Directions to Clone Repo and Run Project
 
 ```
-git clone https://github.com/onehungrymind/angular13-fundamentals-workshop
-cd angular13-fundamentals-workshop
-npm i
+git clone https://github.com/RyanGehris/ecommerce-widget.git
+cd paige-denim
+npm install
 npm start
 ```
 
